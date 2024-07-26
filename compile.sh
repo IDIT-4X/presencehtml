@@ -1,0 +1,6 @@
+#!/bin/bash
+SOURCE_FILE="$1"
+BASENAME=$(basename "$SOURCE_FILE" .c) 
+OUTPUT_FILE_CGI="$BASENAME.cgi"
+
+gcc -o "$OUTPUT_FILE_CGI" "$BASENAME.c"
